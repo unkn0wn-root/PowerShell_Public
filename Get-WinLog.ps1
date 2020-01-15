@@ -14,9 +14,9 @@ function Test-WinRM {
 	
 	$Output = foreach ($Computer in $ComputerName) {
         $Test = [PSCustomObject] @{
-			Output = $null
-            Status = $null
-            ComputerName = $Computer
+				Output = $null
+				Status = $null
+				ComputerName = $Computer
 		}
 		
         try {
